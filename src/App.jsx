@@ -22,6 +22,7 @@ function App() {
 	return (
 		<Background>
 			<Name>Thomas</Name>
+      <Name>Hallström</Name>
 		</Background>
 	);
 }
