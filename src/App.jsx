@@ -1,17 +1,28 @@
 import "./App.css";
-import styled from 'styled-components'
+// App.jsx
 
-function App() {
-	return (
-		<>
-    <Background>
-      <img src="../image/background.avif" alt="" />
-    </Background>			
-		</>
-	);
-}
+import styled from 'styled-components';
 
 const Background = styled.div`
-`
+  background-image: url('../image/background.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  /* Lägg till andra önskade stilar här */
+`;
+
+const Name = styled.h1`
+color: white;
+
+`;
+
+function App() {
+  return (
+    <Background>
+      <Name>Thomas</Name>
+    </Background>
+  );
+}
 
 export default App;
